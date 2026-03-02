@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Singaperbangsa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            background-color: #801020;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #9c1328;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        }
+        .static {
+            position: static;
+            width: 340px;
+            border: 1px;
+        }
+
+        nav {
+            background-color: #d73e3e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 2;
+            padding: 20px;
+            background-color: #ECF0F1;
+            border-radius: 10px;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #BDC3C7;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #c9cdd1;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .content h4 {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4e83f7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #298089;
+            transform: scale(1.1);
+        } 
+        
+        .btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selamat Datang di Website Sederhana</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#">bertanda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <section class="content">
+            <h2>Formulis Pendaftaran</h2>
+                <div class="static">
+                Silahkan isi formulir di bawah ini untuk mendaftar.
+                </div>
+            
+            <h4>Nama Lengkap:</h4>
+            <input type="text" name="Username">
+
+            <h4>Email:</h4>
+            <input type="email" name="email">
+
+
+            <h4>Password</h4>
+            <input type="password" name="password">
+
+            <div class="form-goup">
+            <h4>Jenis Kelamin:</h4>
+                <label><input type="radio" name="gender" value="male">Laki-laki</label> 
+                <label><input type="radio" name="gender" value="female">Perempuan</label>
+            </div>
+
+            <h4>Hobi:</h4>
+                <label><input type="checkbox" name="Hobi"       id="musik">Musik</label>
+                <label><input type="checkbox" name="Hobi" id="olahraga">Olahraga</label>
+                <label><input type="checkbox" name="Hobi" id="membaca">membaca</label>
+
+            <h4>Pilih Kota:</h4>
+            <select name="pilihan" id="kota">
+                <option value="1">Jakarta</option>
+                <option value="2">Bandung</option>
+                <option value="3">Karawang</option>
+                <option value="4">Bekasi</option>
+            </select>
+            
+            <h4>Pesan Tambahan:</h4>
+            <textarea name="pesan" id="pesan" rows="4" cols="50" placeholder="Tulis pesan di sini..."></textarea>
+
+            <footer>
+            <button type="submit" class="btn">kirim</button>
+            </footer>
+        </section>
+        
+
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan</p>
+        </aside>
+    </div>
+
+
+
+
+</body>
+</html>
