@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas PBW </title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .content {
+            border: 2px solid black;
+            padding: 20px;
+            width: 400px;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="content">
+            <h1>Hitung Nilai</h1>
+
+            <label>Masukkan NIM :</label>
+            <input type="text" name="NIM" id="NIM"><br><br>
+
+            <label>Masukkan Nilai Matkul : </label> 
+            <input type="number" name="nilai" id="nilai"><br><br>
+
+            <button onclick="CekNilai()">Cek Nilai</button>
+            <P id="hasil"></P>
+        </section>
+    </div>
+
+    <script src="scriptTugas4.js"></script>
+</body>
+</html>

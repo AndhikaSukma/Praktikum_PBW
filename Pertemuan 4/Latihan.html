@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JavaScript</title>
+</head>
+<body>
+        <!-- ini adalah contoh klik btn -->
+    <button onclick="alert('Halo! Ini adalah JavaScript')">
+        Klik Saya
+    </button>
+
+
+        <!-- ini adalah contoh Internal JavaScript -->
+    <h1 id="judul">Selamat Datang</h1>
+
+    <button onclick="ubahTeks()">Ubah Teks</button>
+
+    <script>
+        function ubahTeks(){
+            document.getElementById("judul").innerHTML="Teks telah berubah!"
+        }
+    </script>
+
+
+        <!-- ini adalah contoh External JavaScript -->
+    <script src="script.js"></script>
+
+
+        <!-- ini adalah contoh Variable dan Tipe Data-->
+    
+    <!-- let untuk deklarasi variable--> <!-- Cek: F12/Inpeksi-->
+    <script src="let.js"></script>
+
+    <!-- const untuk deklarasi variable--> <!-- Cek: F12/Inpeksi-->
+    <script src="const.js"></script>
+
+    <!-- Tipe Data dalam JS--> <!-- Cek: F12/Inpeksi-->
+    <script src="TipeData.js"></script>
+
+</body>
+</html>
