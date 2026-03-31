@@ -26,6 +26,13 @@ $totalBayar = $totalSebelumPajak + $nilaiPajak;
         font-family: Arial;
     }
 
+    .content {
+        border: 2px solid black;
+        padding: 20px;
+        width: 400px;
+        margin: 40px auto;
+    }
+
     h2 {
         text-align: center;
     }
