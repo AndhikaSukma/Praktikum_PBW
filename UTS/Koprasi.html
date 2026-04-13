@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Koprasi</title>
+    <style>
+    .container {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .content {
+        border: 2px solid black;
+        padding: 20px;
+        width: 400px;
+        margin: 40px auto;
+    }
+
+
+    h1 {
+        background-color: #441919;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Koprerasi</h1>
+            <form method="post" action="BaKoprasi.php">
+
+                Nama:
+                <input type="text" name="nama" required minlength="3"><br><br>
+
+                NIM:
+                <input type="number" name="NIM" required pattern="\d{12}"><br><br>
+
+                Email:
+                <input type="email" name="email" required><br><br>
+
+                <h4>Pilih Layanan:
+                    Layanan:
+                    <select name="layanan" required>
+                        <option value="">-- Pilih --</option>
+                        <option value="Reguler">Reguler</option>
+                        <option value="Prioritas">Prioritas</option>
+                    </select><br><br>
+
+                    <b>Pilih Barang:</b><br>
+
+                    <input type="checkbox" name="barang[]" value="Pensil"> Pensil
+                    <input type="number" name="jumlah[Pensil]" min="0"><br>
+
+                    <input type="checkbox" name="barang[]" value="Buku"> Buku
+                    <input type="number" name="jumlah[Buku]" min="0"><br>
+
+                    <input type="checkbox" name="barang[]" value="Pulpen"> Pulpen
+                    <input type="number" name="jumlah[Pulpen]" min="0"><br><br>
+
+                    <button type="submit" name="kirim">Hitung</button>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
